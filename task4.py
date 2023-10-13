@@ -23,3 +23,9 @@ Enter total payments for month(2)  : 75
 Your closing balance is $51.51
 
 """
+for i in range(1, 12):
+    x = float(input(f"Enter total purchases for month {i}: "))
+    y = float(input("Enter total payments for month {i}: "))
+    n = (x - y)*(2/100) 
+    b = x - y + n
+    print(f"Your closing balance is {b}.")

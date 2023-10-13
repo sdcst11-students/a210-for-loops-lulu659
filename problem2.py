@@ -37,3 +37,10 @@ example:
 Enter a number: -4
 Invalid input
 """
+import math
+
+x = int(input("Enter a integer: "))
+if x >=0:
+    print(f"{x}! is {math.factorial(x)}.")
+else:
+    print("Invalid input")

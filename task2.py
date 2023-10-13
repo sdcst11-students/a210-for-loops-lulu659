@@ -14,3 +14,10 @@ Your GST is 2.75
 Your PST is 3.85
 Your total is 61.65
 """
+total = 0
+for i in range(5):
+    p = float(input(f"Enter in the price of the item {i}> "))
+    total += p
+    g = round(total*0.05, 2)
+    s = round(total*0.07, 2)
+print(f"Your subtotal is {total}. \nYour GST is {g}. \nYour PST is {s}. Your total is {total + g + s}.")
